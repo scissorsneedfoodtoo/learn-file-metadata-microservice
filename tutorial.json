@@ -1,0 +1,64 @@
+{
+  "version": "0.0.1",
+  "summary": {
+    "title": "File Metadata Microservice",
+    "description": "> Welcome to the File Metadata Microservice certification project!"
+  },
+  "config": {
+    "setup": {
+      "commands": [
+        "cd .freeCodeCamp && npm install",
+        "./.freeCodeCamp/reset.sh"
+      ],
+      "commits": [
+        "88edf7fb8a7b7d038b074a7f19f3b96b96d870e0"
+      ]
+    },
+    "testRunner": {
+      "command": "npm run programmatic-test",
+      "args": {
+        "tap": "--reporter=mocha-tap-reporter"
+      },
+      "directory": ".freeCodeCamp"
+    },
+    "repo": {
+      "uri": "https://github.com/scissorsneedfoodtoo/learn-file-metadata-microservice",
+      "branch": "v0.0.1"
+    },
+    "reset": {
+      "commands": [
+        "./.freeCodeCamp/reset.sh"
+      ]
+    },
+    "dependencies": [
+      {
+        "name": "node",
+        "version": ">=10"
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "1",
+      "title": "Instructions",
+      "summary": "Build a full stack JavaScript app that is functionally similar to this: https...",
+      "content": "Build a full stack JavaScript app that is functionally similar to this: https://file-metadata-microservice.freecodecamp.rocks/\n\nInstall your project dependencies by entering `npm ci` from the `file-metadata-microservice` folder in the terminal. After that, start your server by running `npm start`. Follow the instructions in the terminal to view your project web page. Don't forget that you need to restart your server in order for your code changes to take place. Pass all the user stories below to complete the project.",
+      "steps": [
+        {
+          "id": "1.1",
+          "content": "Complete the tasks below",
+          "subtasks": [
+            "You can submit a form that includes a file upload.",
+            "The form file input field has the `name` attribute set to `upfile`.",
+            "When you submit a file, you receive the file `name`, `type`, and `size` in bytes within the JSON response."
+          ],
+          "setup": {
+            "commits": [
+              "b4903187bc601e72cc1ea722f3ae05f6e4a5268e"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
