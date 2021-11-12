@@ -1,0 +1,24 @@
+version: "0.0.1"
+config:
+  setup:
+    commands:
+      - cd .freeCodeCamp && npm install
+      - ./.freeCodeCamp/reset.sh
+  testRunner:
+    command: npm run programmatic-test
+    args:
+      tap: --reporter=mocha-tap-reporter
+    directory: .freeCodeCamp
+  repo:
+    uri: https://github.com/scissorsneedfoodtoo/learn-file-metadata-microservice
+    branch: v0.0.1
+  reset:
+    commands:
+      - "./.freeCodeCamp/reset.sh"
+  dependencies:
+    - name: node
+      version: ">=10"
+levels:
+  - id: "1"
+    steps:
+      - id: "1.1"
